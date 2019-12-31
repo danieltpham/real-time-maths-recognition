@@ -4,30 +4,25 @@ This project was done as a personal project for the purpose of applying CNN know
 #### -- Project Status: Completed November 2019
 
 ## Project Intro
-The famous [vertex coloring problem](http://mathworld.wolfram.com/ChromaticNumber.html) has many real-world applications, one of which is to optimise the allocation of resources for interval graph. This can be a simple model for a hotel booking system to allocate customers into rooms so that we can minimize the number of rooms required for a period of time; or a seat reservation system to allow maximum sales without overbooking or overbooking.
+Taking another step from the famous MNIST hand-written digit recognition problem, this project aims to recognize hand-written digits and simple maths operations (addition and multiplication). Inspired by CNN models by [Singh](https://medium.com/@ayrusreev/real-time-digit-recognition-using-keras-5f333c0163e2) and [Vipul](https://github.com/vipul79321/Handwritten-Equation-Solver), I trained 2 simple models on a small non-MNIST dataset (with "+" and "x" characters) to recognize the aforementioned characters and built a simple PyGame to recognize and evaluate real-time input.
 
-[MAST20018 - University of Melbourne](https://handbook.unimelb.edu.au/2019/subjects/mast20018) proposes the following solution for this example problem: **Suppose that we have 6 guests staying at a hotel for different durations, what is the minimum number of rooms to prepare to cater for everyone?**
-![Algorithm Demonstration](https://github.com/danieltpham/hotel-booking-optimisation/blob/master/Slide1.gif)
-* Represent every guest as a node
-* All guests that stay on the same day are connected by an edge
-* Apply the Vertex Coloring Algorithm (Welsh-Powell algorithm) to allocate guests to a room
-* The number of colors used is the minimum number of rooms to prepare
+## PyGame Control
+* Choose a model `vipul_model'` or `'suryaveer_model'` in `predict_digit` function
+* Write input continuously in the left canvas
+* Press 'Enter' to evaluate in `stdout`
+* Left click to reset canvas
+* Press 'Esc' to close
 
-This personal project applies the previous algorithm to [a real-life hotel booking dataset](https://www.sciencedirect.com/science/article/pii/S2352340918315191), using data manipulation techniques to query the dataset and demonstrate the huge execution time of this simple approach.
-
-### Demo
+## Demo
 ![Demo](https://github.com/danieltpham/real-time-maths-recognition/blob/master/demonstration.gif)
 ![Demo Result](https://github.com/danieltpham/real-time-maths-recognition/blob/master/demonstration_result.JPG)
 
-### Methodologies
+## Methodologies
 * Python, Keras, PyGame
 * CNN
 
-## File Descriptions
-* [Jupyter Notebook](https://github.com/danieltpham/hotel-booking-optimisation/blob/master/Optimisation_Stage2.ipynb)
-* [Hotel booking dataset](https://github.com/danieltpham/hotel-booking-optimisation/blob/master/H1.csv)
-* [Dataset description](https://github.com/danieltpham/hotel-booking-optimisation/blob/master/1-s2.0-S2352340918315191-main.pdf)
+## How To Test
+* Download `master_maths_recognition.ipynb` and run with training dataset from [here](https://github.com/vipul79321/Handwritten-Equation-Solver/blob/master/train_final.csv)
 
-## Usage Notes
-* Input a date between 1/7/2015 and 24/8/2017 as a starting date in `2. Select a week to analyse`
-
+## Limitation
+Testing on MNIST dataset yields a 0.2145 accuracy score, which shows weaknesses in the models & input processing pipeline.
