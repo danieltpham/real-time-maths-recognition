@@ -25,4 +25,8 @@ Taking another step from the famous MNIST hand-written digit recognition problem
 * Download `master_maths_recognition.ipynb` and run with training dataset from [here](https://github.com/vipul79321/Handwritten-Equation-Solver/blob/master/train_final.csv)
 
 ## Limitation
-Testing on MNIST dataset yields a 0.2145 accuracy score, which shows weaknesses in the models & input processing pipeline.
+Testing on MNIST dataset yields a `0.2145` accuracy score, which shows weaknesses in the models & input processing pipeline.
+
+## Reference & Credit
+* [Singh](https://medium.com/@ayrusreev/real-time-digit-recognition-using-keras-5f333c0163e2) 
+* [Vipul](https://github.com/vipul79321/Handwritten-Equation-Solver)
