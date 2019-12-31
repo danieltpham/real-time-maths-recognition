@@ -21,8 +21,8 @@ Taking another step from the famous MNIST hand-written digit recognition problem
 * Python, Keras, PyGame
 * CNN
 
-## How To Test
-* Download `master_maths_recognition.ipynb` and run with training dataset from [here](https://github.com/vipul79321/Handwritten-Equation-Solver/blob/master/train_final.csv)
+## Try It Out
+* Download [`master_maths_recognition.ipynb`](https://github.com/danieltpham/real-time-maths-recognition/blob/master/master_maths_recognition.ipynb) and run with training dataset from [here](https://github.com/vipul79321/Handwritten-Equation-Solver/blob/master/train_final.csv)
 
 ## Limitation
 Testing on MNIST dataset yields a `0.2145` accuracy score, which shows weaknesses in the models & input processing pipeline.
